@@ -227,15 +227,6 @@ fun MainScreen(navController: NavController) {
 
 
 
-@Composable
-fun Screen3() {
-    Box(
-        modifier = Modifier.fillMaxSize(),
-        contentAlignment = Alignment.Center
-    ) {
-        Text("Foo3", style = MaterialTheme.typography.headlineMedium)
-    }
-}
 
 @Composable
 fun Screen4() {
