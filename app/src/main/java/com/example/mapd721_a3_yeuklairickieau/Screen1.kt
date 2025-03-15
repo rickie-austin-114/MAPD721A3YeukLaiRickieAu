@@ -14,6 +14,9 @@ import androidx.compose.runtime.remember
 import androidx.compose.runtime.setValue
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
+import androidx.compose.ui.tooling.preview.Preview
+import androidx.navigation.compose.rememberNavController
+import com.example.mapd721_a3_yeuklairickieau.ui.theme.MAPD721A3YeukLaiRickieAuTheme
 
 @Composable
 fun Screen1() {
@@ -50,3 +53,12 @@ fun Screen1() {
         }
     }
 }
+
+@Preview(showBackground = true)
+@Composable
+fun Screen1Preview() {
+    MAPD721A3YeukLaiRickieAuTheme {
+        Screen1()
+    }
+}
+

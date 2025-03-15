@@ -13,7 +13,8 @@ import androidx.compose.runtime.Composable
 import androidx.compose.runtime.getValue
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
-
+import androidx.compose.ui.tooling.preview.Preview
+import com.example.mapd721_a3_yeuklairickieau.ui.theme.MAPD721A3YeukLaiRickieAuTheme
 
 
 @Composable
@@ -34,4 +35,13 @@ fun Screen3() {
             .fillMaxSize()
             .background(color)
     )
+}
+
+
+@Preview(showBackground = true)
+@Composable
+fun Screen3Preview() {
+    MAPD721A3YeukLaiRickieAuTheme {
+        Screen3()
+    }
 }
