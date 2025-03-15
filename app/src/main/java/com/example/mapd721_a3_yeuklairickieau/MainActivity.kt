@@ -349,14 +349,3 @@ private object GestureAndAnimationSwipeToDismiss {
     // [END android_compose_animations_gesture_swipe_dismiss]
 }
 
-@Composable
-fun Square(modifier: Modifier) {
-    Canvas(modifier = modifier) {
-        val squareSize = 200f // Fixed size of the square (100x100)
-        drawRect(
-            color = Color.Blue,
-            topLeft = Offset(size.width / 2 - squareSize / 2, size.height / 2 - squareSize / 2),
-            size = Size(squareSize, squareSize)
-        )
-    }
-}
