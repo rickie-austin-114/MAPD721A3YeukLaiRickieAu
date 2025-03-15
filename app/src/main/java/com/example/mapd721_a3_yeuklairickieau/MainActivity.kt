@@ -151,6 +151,7 @@ import androidx.compose.foundation.gestures.horizontalDrag
 import androidx.compose.foundation.layout.*
 import androidx.compose.material3.*
 import androidx.compose.ui.composed
+import androidx.compose.ui.geometry.Size
 import androidx.compose.ui.input.pointer.pointerInput
 import androidx.compose.ui.input.pointer.positionChange
 import androidx.compose.ui.input.pointer.util.VelocityTracker
@@ -276,7 +277,7 @@ private object GestureAndAnimationSimple {
                     }
                 }
         ) {
-            Circle(modifier = Modifier.offset { offset.value.toIntOffset() })
+            Square(modifier = Modifier.offset { offset.value.toIntOffset() })
         }
     }
 
@@ -349,12 +350,13 @@ private object GestureAndAnimationSwipeToDismiss {
 }
 
 @Composable
-fun Circle(modifier: Modifier) {
+fun Square(modifier: Modifier) {
     Canvas(modifier = modifier) {
-        drawCircle(
+        val squareSize = 200f // Fixed size of the square (100x100)
+        drawRect(
             color = Color.Blue,
-            radius = 100f, // Fixed radius of 50
-            center = Offset(size.width / 2, size.height / 2) // Center of the canvas
+            topLeft = Offset(size.width / 2 - squareSize / 2, size.height / 2 - squareSize / 2),
+            size = Size(squareSize, squareSize)
         )
     }
 }
