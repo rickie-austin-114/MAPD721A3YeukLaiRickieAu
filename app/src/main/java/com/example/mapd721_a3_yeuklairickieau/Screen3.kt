@@ -14,6 +14,8 @@ import androidx.compose.runtime.getValue
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
 
+
+
 @Composable
 fun Screen3() {
     val infiniteTransition = rememberInfiniteTransition(label = "infinite")
