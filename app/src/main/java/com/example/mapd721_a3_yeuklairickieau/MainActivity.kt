@@ -248,7 +248,7 @@ fun Screen4() {
         modifier = Modifier.fillMaxSize(),
         contentAlignment = Alignment.Center
     ) {
-        Text("Bar4", style = MaterialTheme.typography.headlineMedium)
+        GestureAndAnimationSimple.Gesture()
     }
 }
 
