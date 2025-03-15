@@ -54,6 +54,13 @@ fun MainScreen(navController: NavController) {
         ) {
             Text("Go to Screen 4")
         }
+        Spacer(modifier = Modifier.height(16.dp))
+
+        Text("Yeuk Lai Rickie Au")
+        Spacer(modifier = Modifier.height(16.dp))
+
+        Text("301458593")
+
     }
 }
 
