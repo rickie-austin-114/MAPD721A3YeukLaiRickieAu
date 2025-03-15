@@ -200,46 +200,6 @@ fun AppNavigation() {
     }
 }
 
-@Composable
-fun MainScreen(navController: NavController) {
-    Column(
-        modifier = Modifier
-            .fillMaxSize()
-            .padding(16.dp),
-        verticalArrangement = Arrangement.Center,
-        horizontalAlignment = Alignment.CenterHorizontally
-    ) {
-        Button(
-            onClick = { navController.navigate("screen1") },
-            modifier = Modifier.fillMaxWidth()
-        ) {
-            Text("Go to Screen 1")
-        }
-        Spacer(modifier = Modifier.height(16.dp))
-        Button(
-            onClick = { navController.navigate("screen2") },
-            modifier = Modifier.fillMaxWidth()
-        ) {
-            Text("Go to Screen 2")
-        }
-        Spacer(modifier = Modifier.height(16.dp))
-        Button(
-            onClick = { navController.navigate("screen3") },
-            modifier = Modifier.fillMaxWidth()
-        ) {
-            Text("Go to Screen 3")
-        }
-        Spacer(modifier = Modifier.height(16.dp))
-        Button(
-            onClick = { navController.navigate("screen4") },
-            modifier = Modifier.fillMaxWidth()
-        ) {
-            Text("Go to Screen 4")
-        }
-    }
-}
-
-
 
 
 
